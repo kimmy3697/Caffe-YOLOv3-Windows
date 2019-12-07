@@ -80,6 +80,10 @@ pythonTool 폴더 안에 파이썬 코드 하나 만들어 넣었어요~ 간단�
 ## LMDB 생성
 LMDB 생성은 build/tools/Release 폴더안에 convert_annoset.exe 파일을 이용합니다. 해당 경로에서 powershell을 켜주시고 
 
+•./convert_annoset --anno_type=detection --label_map_file=./outputTEST.prototxt --resize_width=320 --resize_height=320 --encoded=true C:\CaffeThings\DK_TEST_PILOT\TRAIN/ C:\CaffeThings\DK_TEST_PILOT\TRAIN\SpaceX.txt Resized_DK_LMDB_Train
+
+•./convert_annoset --anno_type=detection --label_map_file=./outputTEST.prototxt --resize_width=320 --resize_height=320 --encoded=true C:\CaffeThings\DK_TEST_PILOT\TEST/ C:\CaffeThings\DK_TEST_PILOT\TEST\SpaceX_Test.txt Resized_DK_LMDB_Test
+
 ### Trainning Mobilenet-YOLOv3
   
 ```
@@ -113,9 +117,9 @@ Please cite MobileNet-YOLO in your publications if it helps your research:
       Year = {2018}
     }
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzNDM4NTA1MSwxMDAyMTU5ODQxLC0yMT
-A4MTgxNDk5LDE2Njk0NTE3MjMsLTE4OTQ1NjgyMDEsLTE5ODEy
-NTg4MDYsMTM2NjkyMzc1MSwxOTc4MzkxNjYzLC04NjM0MzM4MD
-EsLTY0ODQxMjgyNyw4NDIzODEyMzcsLTE2NzEyNzY0NTEsNjU4
-NTkzODBdfQ==
+eyJoaXN0b3J5IjpbLTcxNjIyNDkyLDEwMDIxNTk4NDEsLTIxMD
+gxODE0OTksMTY2OTQ1MTcyMywtMTg5NDU2ODIwMSwtMTk4MTI1
+ODgwNiwxMzY2OTIzNzUxLDE5NzgzOTE2NjMsLTg2MzQzMzgwMS
+wtNjQ4NDEyODI3LDg0MjM4MTIzNywtMTY3MTI3NjQ1MSw2NTg1
+OTM4MF19
 -->
