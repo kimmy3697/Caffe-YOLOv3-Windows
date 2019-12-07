@@ -72,6 +72,8 @@ Fork 해서 가져온 리포지토리구요 윈도우버전만 사용한다는 �
 
 아 참고로 말씀드리자면 지금 사용하는 xml 포맷은 pascal voc 포맷이고 yolo에서도 사용하는 포맷입니다. 그러니까 voc 데이터를 yolo에서도 사용할 수 있다~ 이말입니다! 아쉬겠어요? 
 
+
+
 ### Trainning Mobilenet-YOLOv3
   
 ```
@@ -105,8 +107,8 @@ Please cite MobileNet-YOLO in your publications if it helps your research:
       Year = {2018}
     }
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDgxODE0OTksMTY2OTQ1MTcyMywtMT
-g5NDU2ODIwMSwtMTk4MTI1ODgwNiwxMzY2OTIzNzUxLDE5Nzgz
-OTE2NjMsLTg2MzQzMzgwMSwtNjQ4NDEyODI3LDg0MjM4MTIzNy
-wtMTY3MTI3NjQ1MSw2NTg1OTM4MF19
+eyJoaXN0b3J5IjpbMTAwMjE1OTg0MSwtMjEwODE4MTQ5OSwxNj
+Y5NDUxNzIzLC0xODk0NTY4MjAxLC0xOTgxMjU4ODA2LDEzNjY5
+MjM3NTEsMTk3ODM5MTY2MywtODYzNDMzODAxLC02NDg0MTI4Mj
+csODQyMzgxMjM3LC0xNjcxMjc2NDUxLDY1ODU5MzgwXX0=
 -->
