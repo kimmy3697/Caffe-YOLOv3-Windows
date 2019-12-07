@@ -79,7 +79,10 @@ Fork 해서 가져온 리포지토리구요 윈도우버전만 사용한다는 �
 그러고 나면 뭐 입력하라고 하는데 생성할 데이터 리스트의 이름을 정해주시면 됩니다. 이름만 쓰시고 생성된 파일에 .txt를 붙이셔도 되고 아니면 그냥 바로 .txt 로 지정해주셔도 됩니다. 그러면 총 3번 폴더를 선택하라고 나오는데 첫번째는 이미지 폴더, 두번째는 어노테이션 폴더, 세번째는 데이터 리스트 저장할 폴더를 묻는겁니다. 주의 하실점은 앞에 두 폴더는 반드시 같은 폴더 하위에 있어야 합니다. 헷갈리시면 제가 만들어 놓은 pythonTool 폴더 내부에 예시가 있으니 DataSet 폴더의 img 폴더와 anno 폴더를 활용하시면 됩니다.
  - 데이터리스트 파일이 완성됬을때 아래와 같이 나오면 됩니다.
  - ![enter image description here](https://github.com/kimmy3697/Caffe-YOLOv3-Windows/blob/master/path_pairing_cap.png?raw=true)
- - 이제 우리 labelImg로 어노테이션 할때 수정했던 predefined_classes.txt 파일이 필요해영
+ 
+
+
+**이제 우리 labelImg로 어노테이션 할때 수정했던 predefined_classes.txt 파일이 필요해영**
  -  build/tools/Release 폴더안에 create_label_map.exe 를 사용합니다.
  - 윈도우 파워 쉘을 실행하고 build/tools/Release 까지 이동하시고 아래와 같이 입력합시다.**(띄어쓰기에 유의 하세용)**
 C:\...\Caffe-YOLOv3-Windows\build\tools\Release> ./create_label_map.exe C:\...\predefined_classes.txt C:\...\출력파일.prototxt
@@ -88,7 +91,7 @@ C:\...\Caffe-YOLOv3-Windows\build\tools\Release> ./create_label_map.exe C:\...\p
 ## LMDB 생성
 LMDB 생성은 build/tools/Release 폴더안에 convert_annoset.exe 파일을 이용합니다. 해당 경로에서 powershell을 켜주시고 
 
-•./convert_annoset --anno_type=detection --label_map_file=./outputTEST.prototxt --resize_width=320 --resize_height=320 --encoded=true C:\CaffeThings\DK_TEST_PILOT\TRAIN/ C:\CaffeThings\DK_TEST_PILOT\TRAIN\SpaceX.txt Resized_DK_LMDB_Train
+•./convert_annoset --anno_type=detection --label_map_file=레이블맵경로.prototxt --resize_width=320 --resize_height=320 --encoded=true C:\CaffeThings\DK_TEST_PILOT\TRAIN/ C:\CaffeThings\DK_TEST_PILOT\TRAIN\SpaceX.txt Resized_DK_LMDB_Train
 
 •./convert_annoset --anno_type=detection --label_map_file=./outputTEST.prototxt --resize_width=320 --resize_height=320 --encoded=true C:\CaffeThings\DK_TEST_PILOT\TEST/ C:\CaffeThings\DK_TEST_PILOT\TEST\SpaceX_Test.txt Resized_DK_LMDB_Test
 
@@ -125,7 +128,7 @@ Please cite MobileNet-YOLO in your publications if it helps your research:
       Year = {2018}
     }
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzNzA4NDM4OCwyMDE0OTQ1NjkyLDEwMD
+eyJoaXN0b3J5IjpbLTIxNTM2NzQwOSwyMDE0OTQ1NjkyLDEwMD
 IxNTk4NDEsLTIxMDgxODE0OTksMTY2OTQ1MTcyMywtMTg5NDU2
 ODIwMSwtMTk4MTI1ODgwNiwxMzY2OTIzNzUxLDE5NzgzOTE2Nj
 MsLTg2MzQzMzgwMSwtNjQ4NDEyODI3LDg0MjM4MTIzNywtMTY3
