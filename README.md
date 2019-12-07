@@ -75,7 +75,10 @@ Fork 해서 가져온 리포지토리구요 윈도우버전만 사용한다는 �
 ## 데이터 리스트 생성
 pythonTool 폴더 안에 파이썬 코드 하나 만들어 넣었어요~ 간단한 코드지만 직접 만드는건 귀찮으니까... 그냥 이거 사용법을 알려드릴게요... 맘에 안드는 부분은 수정하시면 될 거에요.
 여튼 anaconda 나 뭐 기타 python 실행 되는걸로 실행 시켜줍시다.
-그러고 나면 뭐 입력하라고 하는데 생성할 데이터 리스트의 이름을 정해주시면 됩니다. 이름만 쓰시고 생성된 파일에 .txt를 붙이셔도 되고 아니면 그냥 바로 .txt 로 지정해주셔도 됩니다. 그러면 총 3번 폴더를 선택하라고 나오는데 첫번째는 이미지 폴더, 두번째는 어노테이션 폴더, 세번째는 데이터 리스트 저장할 폴더를 묻는겁니다. 주의 하실점은 앞에 두 폴더는 반드시 같은 폴더 하위에 있어야 합니다. 헷갈리시면 제가 만들어 놓은 pythonTool 폴더 내부에 예시가 있으니 해당 경로의 img 폴더와 ann 
+그러고 나면 뭐 입력하라고 하는데 생성할 데이터 리스트의 이름을 정해주시면 됩니다. 이름만 쓰시고 생성된 파일에 .txt를 붙이셔도 되고 아니면 그냥 바로 .txt 로 지정해주셔도 됩니다. 그러면 총 3번 폴더를 선택하라고 나오는데 첫번째는 이미지 폴더, 두번째는 어노테이션 폴더, 세번째는 데이터 리스트 저장할 폴더를 묻는겁니다. 주의 하실점은 앞에 두 폴더는 반드시 같은 폴더 하위에 있어야 합니다. 헷갈리시면 제가 만들어 놓은 pythonTool 폴더 내부에 예시가 있으니 해당 경로의 img 폴더와 anno 폴더를 활용하시면 됩니다. 
+
+## LMDB 생성
+LMDB 생성은 
 
 ### Trainning Mobilenet-YOLOv3
   
@@ -110,9 +113,9 @@ Please cite MobileNet-YOLO in your publications if it helps your research:
       Year = {2018}
     }
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTY0ODk1MTEsMTAwMjE1OTg0MSwtMj
-EwODE4MTQ5OSwxNjY5NDUxNzIzLC0xODk0NTY4MjAxLC0xOTgx
-MjU4ODA2LDEzNjY5MjM3NTEsMTk3ODM5MTY2MywtODYzNDMzOD
-AxLC02NDg0MTI4MjcsODQyMzgxMjM3LC0xNjcxMjc2NDUxLDY1
-ODU5MzgwXX0=
+eyJoaXN0b3J5IjpbNjI0MTExMDQ0LDEwMDIxNTk4NDEsLTIxMD
+gxODE0OTksMTY2OTQ1MTcyMywtMTg5NDU2ODIwMSwtMTk4MTI1
+ODgwNiwxMzY2OTIzNzUxLDE5NzgzOTE2NjMsLTg2MzQzMzgwMS
+wtNjQ4NDEyODI3LDg0MjM4MTIzNywtMTY3MTI3NjQ1MSw2NTg1
+OTM4MF19
 -->
