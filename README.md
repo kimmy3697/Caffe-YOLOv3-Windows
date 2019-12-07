@@ -73,7 +73,9 @@ Fork 해서 가져온 리포지토리구요 윈도우버전만 사용한다는 �
 아 참고로 말씀드리자면 지금 사용하는 xml 포맷은 pascal voc 포맷이고 yolo에서도 사용하는 포맷입니다. 그러니까 voc 데이터를 yolo에서도 사용할 수 있다~ 이말입니다! 아쉬겠어요? 
 
 ## 데이터 리스트 생성
-pythonTool 폴더 안에 툴하나
+pythonTool 폴더 안에 파이썬 코드 하나 만들어 넣었어요~ 간단한 코드지만 직접 만드는건 귀찮으니까... 그냥 이거 사용법을 알려드릴게요... 맘에 안드는 부분은 수정하시면 될 거에요.
+여튼 anaconda 나 뭐 기타 python 실행 되는걸로 실행 시켜줍시다.
+그러고 나면 뭐 입력하라고 하는데 ㅇ
 
 ### Trainning Mobilenet-YOLOv3
   
@@ -108,9 +110,9 @@ Please cite MobileNet-YOLO in your publications if it helps your research:
       Year = {2018}
     }
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzM2MzgxNywxMDAyMTU5ODQxLC0yMT
-A4MTgxNDk5LDE2Njk0NTE3MjMsLTE4OTQ1NjgyMDEsLTE5ODEy
-NTg4MDYsMTM2NjkyMzc1MSwxOTc4MzkxNjYzLC04NjM0MzM4MD
-EsLTY0ODQxMjgyNyw4NDIzODEyMzcsLTE2NzEyNzY0NTEsNjU4
-NTkzODBdfQ==
+eyJoaXN0b3J5IjpbLTEwNjU5NzI3NTcsMTAwMjE1OTg0MSwtMj
+EwODE4MTQ5OSwxNjY5NDUxNzIzLC0xODk0NTY4MjAxLC0xOTgx
+MjU4ODA2LDEzNjY5MjM3NTEsMTk3ODM5MTY2MywtODYzNDMzOD
+AxLC02NDg0MTI4MjcsODQyMzgxMjM3LC0xNjcxMjc2NDUxLDY1
+ODU5MzgwXX0=
 -->
