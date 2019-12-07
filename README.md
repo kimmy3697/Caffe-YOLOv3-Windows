@@ -75,7 +75,7 @@ Fork 해서 가져온 리포지토리구요 윈도우버전만 사용한다는 �
 ## 데이터 리스트 생성
 pythonTool 폴더 안에 파이썬 코드 하나 만들어 넣었어요~ 간단한 코드지만 직접 만드는건 귀찮으니까... 그냥 이거 사용법을 알려드릴게요... 맘에 안드는 부분은 수정하시면 될 거에요.
 여튼 anaconda 나 뭐 기타 python 실행 되는걸로 실행 시켜줍시다.
-그러고 나면 뭐 입력하라고 하는데 ㅇ
+그러고 나면 뭐 입력하라고 하는데 생성할 데이터 리스트의 이름을 정해주시면 됩니다. 이름만 쓰시고 생성된 파일에 .txt를 붙이셔도 되고 아니면 그냥 바로 .txt 로 지정해주셔도 됩니다. 그러면 총 3번 폴더를 선택하라고 나오는데 첫번째는 이미지 폴더, 두번째는 annotation 
 
 ### Trainning Mobilenet-YOLOv3
   
@@ -110,9 +110,9 @@ Please cite MobileNet-YOLO in your publications if it helps your research:
       Year = {2018}
     }
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjU5NzI3NTcsMTAwMjE1OTg0MSwtMj
-EwODE4MTQ5OSwxNjY5NDUxNzIzLC0xODk0NTY4MjAxLC0xOTgx
-MjU4ODA2LDEzNjY5MjM3NTEsMTk3ODM5MTY2MywtODYzNDMzOD
-AxLC02NDg0MTI4MjcsODQyMzgxMjM3LC0xNjcxMjc2NDUxLDY1
-ODU5MzgwXX0=
+eyJoaXN0b3J5IjpbLTQ2NTE2NTgzMywxMDAyMTU5ODQxLC0yMT
+A4MTgxNDk5LDE2Njk0NTE3MjMsLTE4OTQ1NjgyMDEsLTE5ODEy
+NTg4MDYsMTM2NjkyMzc1MSwxOTc4MzkxNjYzLC04NjM0MzM4MD
+EsLTY0ODQxMjgyNyw4NDIzODEyMzcsLTE2NzEyNzY0NTEsNjU4
+NTkzODBdfQ==
 -->
