@@ -78,7 +78,7 @@ pythonTool 폴더 안에 파이썬 코드 하나 만들어 넣었어요~ 간단�
 그러고 나면 뭐 입력하라고 하는데 생성할 데이터 리스트의 이름을 정해주시면 됩니다. 이름만 쓰시고 생성된 파일에 .txt를 붙이셔도 되고 아니면 그냥 바로 .txt 로 지정해주셔도 됩니다. 그러면 총 3번 폴더를 선택하라고 나오는데 첫번째는 이미지 폴더, 두번째는 어노테이션 폴더, 세번째는 데이터 리스트 저장할 폴더를 묻는겁니다. 주의 하실점은 앞에 두 폴더는 반드시 같은 폴더 하위에 있어야 합니다. 헷갈리시면 제가 만들어 놓은 pythonTool 폴더 내부에 예시가 있으니 해당 경로의 img 폴더와 anno 폴더를 활용하시면 됩니다. 
 
 ## LMDB 생성
-LMDB 생성은 
+LMDB 생성은 build/tools/Release 폴더안에 convert_annoset.exe 파일을 이용합니다. 해당 경로에서 powershell을 켜주시고 
 
 ### Trainning Mobilenet-YOLOv3
   
@@ -113,9 +113,9 @@ Please cite MobileNet-YOLO in your publications if it helps your research:
       Year = {2018}
     }
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjI0MTExMDQ0LDEwMDIxNTk4NDEsLTIxMD
-gxODE0OTksMTY2OTQ1MTcyMywtMTg5NDU2ODIwMSwtMTk4MTI1
-ODgwNiwxMzY2OTIzNzUxLDE5NzgzOTE2NjMsLTg2MzQzMzgwMS
-wtNjQ4NDEyODI3LDg0MjM4MTIzNywtMTY3MTI3NjQ1MSw2NTg1
-OTM4MF19
+eyJoaXN0b3J5IjpbMTEzNDM4NTA1MSwxMDAyMTU5ODQxLC0yMT
+A4MTgxNDk5LDE2Njk0NTE3MjMsLTE4OTQ1NjgyMDEsLTE5ODEy
+NTg4MDYsMTM2NjkyMzc1MSwxOTc4MzkxNjYzLC04NjM0MzM4MD
+EsLTY0ODQxMjgyNyw4NDIzODEyMzcsLTE2NzEyNzY0NTEsNjU4
+NTkzODBdfQ==
 -->
