@@ -89,10 +89,11 @@ C:\...\Caffe-YOLOv3-Windows\build\tools\Release> ./create_label_map.exe C:\...\p
 ![enter image description here](https://github.com/kimmy3697/Caffe-YOLOv3-Windows/blob/master/labelmapCap.png?raw=true)
 
 ## LMDB 생성
-LMDB 생성은 build/tools/Release 폴더안에 convert_annoset.exe 파일을 이용합니다. 해당 경로에서 powershell을 켜주시고 
+LMDB 생성은 build/tools/Release 폴더안에 convert_annoset.exe 파일을 이용합니다. 해당 경로에서 powershell을 켜주시고 아래 명령어를 입력하세요 리사이즈는 원하시는 대로 변
 
 •./convert_annoset --anno_type=detection --label_map_file=레이블맵경로.prototxt --resize_width=320 --resize_height=320 --encoded=true 리스트파일루트폴더경로 리스트파일경로 LMDB저장경로
 
+ - 
 
 ### Trainning Mobilenet-YOLOv3
   
@@ -127,9 +128,9 @@ Please cite MobileNet-YOLO in your publications if it helps your research:
       Year = {2018}
     }
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTY1NTY3NzQsMjAxNDk0NTY5MiwxMD
-AyMTU5ODQxLC0yMTA4MTgxNDk5LDE2Njk0NTE3MjMsLTE4OTQ1
-NjgyMDEsLTE5ODEyNTg4MDYsMTM2NjkyMzc1MSwxOTc4MzkxNj
-YzLC04NjM0MzM4MDEsLTY0ODQxMjgyNyw4NDIzODEyMzcsLTE2
-NzEyNzY0NTEsNjU4NTkzODBdfQ==
+eyJoaXN0b3J5IjpbNTY0MTc5MTMsMjAxNDk0NTY5MiwxMDAyMT
+U5ODQxLC0yMTA4MTgxNDk5LDE2Njk0NTE3MjMsLTE4OTQ1Njgy
+MDEsLTE5ODEyNTg4MDYsMTM2NjkyMzc1MSwxOTc4MzkxNjYzLC
+04NjM0MzM4MDEsLTY0ODQxMjgyNyw4NDIzODEyMzcsLTE2NzEy
+NzY0NTEsNjU4NTkzODBdfQ==
 -->
