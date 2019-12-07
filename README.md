@@ -81,7 +81,7 @@ Fork 해서 가져온 리포지토리구요 윈도우버전만 사용한다는 �
  - ![enter image description here](https://github.com/kimmy3697/Caffe-YOLOv3-Windows/blob/master/path_pairing_cap.png?raw=true)
  - 이제 우리 labelImg로 어노테이션 할때 수정했던 predefined_classes.txt 파일이 필요해영
  -  build/tools/Release 폴더안에 create_label_map.exe 를 사용합니다.
- - 윈도우 파워 쉘을 실행하고 build/tools/Release 까지 이동하시고 아래와 같이 입력합시다.(띄어)
+ - 윈도우 파워 쉘을 실행하고 build/tools/Release 까지 이동하시고 아래와 같이 입력합시다.**(띄어쓰기에 유의 하세용)**
 C:\...\Caffe-YOLOv3-Windows\build\tools\Release> ./create_label_map.exe C:\...\predefined_classes.txt C:\...\출력파일.prototxt
 
 ## LMDB 생성
@@ -124,9 +124,9 @@ Please cite MobileNet-YOLO in your publications if it helps your research:
       Year = {2018}
     }
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxMDgzNTIyMiwyMDE0OTQ1NjkyLDEwMD
-IxNTk4NDEsLTIxMDgxODE0OTksMTY2OTQ1MTcyMywtMTg5NDU2
-ODIwMSwtMTk4MTI1ODgwNiwxMzY2OTIzNzUxLDE5NzgzOTE2Nj
-MsLTg2MzQzMzgwMSwtNjQ4NDEyODI3LDg0MjM4MTIzNywtMTY3
-MTI3NjQ1MSw2NTg1OTM4MF19
+eyJoaXN0b3J5IjpbLTEwNTg2OTg2ODMsMjAxNDk0NTY5MiwxMD
+AyMTU5ODQxLC0yMTA4MTgxNDk5LDE2Njk0NTE3MjMsLTE4OTQ1
+NjgyMDEsLTE5ODEyNTg4MDYsMTM2NjkyMzc1MSwxOTc4MzkxNj
+YzLC04NjM0MzM4MDEsLTY0ODQxMjgyNyw4NDIzODEyMzcsLTE2
+NzEyNzY0NTEsNjU4NTkzODBdfQ==
 -->
