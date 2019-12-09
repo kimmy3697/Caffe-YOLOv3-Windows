@@ -98,6 +98,7 @@ LMDB 생성은 build/tools/Release 폴더안에 convert_annoset.exe 파일을 �
 ## prototxt 파일 수정
 카페에서는 모델과 학습과 관련된 정보를 별도의 파일로 관리합니다.
 prototxt 형태로 저장된 이 파일들은 크게 solver, train, test 가 있습니다. 먼저 solver에는 텐서플로우로 피면 옵티마이저가 정의 되는 곳입니다. 여기서 학습에 필요한 각종 하이퍼 파라미터들이 정의 됩니다. 또한, solver에서 train과 test의 경로를 가지고 있습니다. solver는 또 solverstate 라는 놈의 경로를 지정하게 되는데 이는 학습이 도중에 중단되더라도 다시 제개할 수 있게 해줍니다. 텐서플로우의 체크포인트와 같은 것입니다. 
+![enter image description here](https://github.com/kimmy3697/Caffe-YOLOv3-Windows/blob/master/CaffePrototxtRelations.png?raw=true)
 
 
 
@@ -134,7 +135,7 @@ Please cite MobileNet-YOLO in your publications if it helps your research:
       Year = {2018}
     }
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5NTYxNDg5LC0xNDcxMTM5NTg2LDE3OD
+eyJoaXN0b3J5IjpbNTg3ODc2MzcyLC0xNDcxMTM5NTg2LDE3OD
 UzNzE2MTksMjAxNDk0NTY5MiwxMDAyMTU5ODQxLC0yMTA4MTgx
 NDk5LDE2Njk0NTE3MjMsLTE4OTQ1NjgyMDEsLTE5ODEyNTg4MD
 YsMTM2NjkyMzc1MSwxOTc4MzkxNjYzLC04NjM0MzM4MDEsLTY0
