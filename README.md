@@ -101,7 +101,12 @@ LMDB 생성은 build/tools/Release 폴더안에 convert_annoset.exe 파일을 �
 prototxt 형태로 저장된 이 파일들은 크게 solver, train, test 가 있습니다. 먼저 solver에는 텐서플로우로 피면 옵티마이저가 정의 되는 곳입니다. 여기서 학습에 필요한 각종 하이퍼 파라미터들이 정의 됩니다. 또한, solver에서 train과 test의 경로를 가지고 있습니다. solver는 또 solverstate 라는 놈의 경로를 지정하게 되는데 이는 학습이 도중에 중단되더라도 다시 제개할 수 있게 해줍니다. 텐서플로우의 체크포인트와 같은 것입니다. 
 ![enter image description here](https://github.com/kimmy3697/Caffe-YOLOv3-Windows/blob/master/CaffePrototxtRelations.png?raw=true)
 
-Mobilenet_Yolov3_lite_Solver.prototxt
+models/yolov3 폴더 내부의 아래 3개 파일을 수정합니다.
+
+ - mobilenet_yolov3_lite_solver.prototxt
+ - mobilenet_yolov3_lite_solver.prototxt
+
+
 
 ### Trainning Mobilenet-YOLOv3
   
@@ -136,10 +141,10 @@ Please cite MobileNet-YOLO in your publications if it helps your research:
       Year = {2018}
     }
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzNDQ4ODA3Myw1ODc4NzYzNzIsLTE0Nz
-ExMzk1ODYsMTc4NTM3MTYxOSwyMDE0OTQ1NjkyLDEwMDIxNTk4
-NDEsLTIxMDgxODE0OTksMTY2OTQ1MTcyMywtMTg5NDU2ODIwMS
-wtMTk4MTI1ODgwNiwxMzY2OTIzNzUxLDE5NzgzOTE2NjMsLTg2
-MzQzMzgwMSwtNjQ4NDEyODI3LDg0MjM4MTIzNywtMTY3MTI3Nj
-Q1MSw2NTg1OTM4MF19
+eyJoaXN0b3J5IjpbMTg3NDA5Mzk3MCwxMDM0NDg4MDczLDU4Nz
+g3NjM3MiwtMTQ3MTEzOTU4NiwxNzg1MzcxNjE5LDIwMTQ5NDU2
+OTIsMTAwMjE1OTg0MSwtMjEwODE4MTQ5OSwxNjY5NDUxNzIzLC
+0xODk0NTY4MjAxLC0xOTgxMjU4ODA2LDEzNjY5MjM3NTEsMTk3
+ODM5MTY2MywtODYzNDMzODAxLC02NDg0MTI4MjcsODQyMzgxMj
+M3LC0xNjcxMjc2NDUxLDY1ODU5MzgwXX0=
 -->
