@@ -104,7 +104,9 @@ prototxt 형태로 저장된 이 파일들은 크게 solver, train, test 가 있
 models/yolov3 폴더 내부의 아래 3개 파일을 수정합니다.
 
  - mobilenet_yolov3_lite_solver.prototxt
- - mobilenet_yolov3_lite_solver.prototxt
+ - mobilenet_yolov3_lite_train.prototxt
+ - mobilenet_yolov3_lite_test.prototxt
+solver의 train_net, te
 
 
 
@@ -141,10 +143,10 @@ Please cite MobileNet-YOLO in your publications if it helps your research:
       Year = {2018}
     }
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3NDA5Mzk3MCwxMDM0NDg4MDczLDU4Nz
-g3NjM3MiwtMTQ3MTEzOTU4NiwxNzg1MzcxNjE5LDIwMTQ5NDU2
-OTIsMTAwMjE1OTg0MSwtMjEwODE4MTQ5OSwxNjY5NDUxNzIzLC
-0xODk0NTY4MjAxLC0xOTgxMjU4ODA2LDEzNjY5MjM3NTEsMTk3
-ODM5MTY2MywtODYzNDMzODAxLC02NDg0MTI4MjcsODQyMzgxMj
-M3LC0xNjcxMjc2NDUxLDY1ODU5MzgwXX0=
+eyJoaXN0b3J5IjpbNzE1NDUwODQsMTAzNDQ4ODA3Myw1ODc4Nz
+YzNzIsLTE0NzExMzk1ODYsMTc4NTM3MTYxOSwyMDE0OTQ1Njky
+LDEwMDIxNTk4NDEsLTIxMDgxODE0OTksMTY2OTQ1MTcyMywtMT
+g5NDU2ODIwMSwtMTk4MTI1ODgwNiwxMzY2OTIzNzUxLDE5Nzgz
+OTE2NjMsLTg2MzQzMzgwMSwtNjQ4NDEyODI3LDg0MjM4MTIzNy
+wtMTY3MTI3NjQ1MSw2NTg1OTM4MF19
 -->
