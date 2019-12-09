@@ -107,12 +107,11 @@ models/yolov3 폴더 내부의 아래 3개 파일을 수정합니다.
  - mobilenet_yolov3_lite_train.prototxt
  - mobilenet_yolov3_lite_test.prototxt
 
-solver는 그냥 쓰셔도 되고 아니면 따로 새로 하셔도 되구요. 대신 경로만 제대로 잡으시면 문제 없습니다. 바꿔야 할 부분은 train, test 의 
+solver는 그냥 쓰셔도 되고 아니면 따로 새로 하셔도 되구요. 대신 경로만 제대로 잡으시면 문제 없습니다. 바꿔야 할 부분은 train, test 의 lmdb 경로와 label_map_file 경로입니다. 3경로를 모두 우리가 위에서 준비한 파일들의 위치로 경로를 변경해 줍니다. 
 
 
-
-### Trainning Mobilenet-YOLOv3
-  
+### 마지막으로 학습!
+  학습은 아래 코드를 실행하는 것으로 수행 됩니다. 자세한 내용은 
 ```
 > cd $caffe_root/
 > examples\train_yolov3_lite.cmd
@@ -144,7 +143,7 @@ Please cite MobileNet-YOLO in your publications if it helps your research:
       Year = {2018}
     }
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2NzU3OTM5MSwxMDM0NDg4MDczLDU4Nz
+eyJoaXN0b3J5IjpbMTc4NDY3MDU0OSwxMDM0NDg4MDczLDU4Nz
 g3NjM3MiwtMTQ3MTEzOTU4NiwxNzg1MzcxNjE5LDIwMTQ5NDU2
 OTIsMTAwMjE1OTg0MSwtMjEwODE4MTQ5OSwxNjY5NDUxNzIzLC
 0xODk0NTY4MjAxLC0xOTgxMjU4ODA2LDEzNjY5MjM3NTEsMTk3
