@@ -94,6 +94,7 @@ LMDB 생성은 build/tools/Release 폴더안에 convert_annoset.exe 파일을 �
 •./convert_annoset --anno_type=detection --label_map_file=레이블맵경로.prototxt --resize_width=320 --resize_height=320 --encoded=true 리스트파일루트폴더경로 리스트파일경로 LMDB저장경로
 
 위 방법대로 Train LMDB와 Test LMDB를 만들어주세요.
+
  
 ## prototxt 파일 수정
 카페에서는 모델과 학습과 관련된 정보를 별도의 파일로 관리합니다.
@@ -135,10 +136,10 @@ Please cite MobileNet-YOLO in your publications if it helps your research:
       Year = {2018}
     }
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTg3ODc2MzcyLC0xNDcxMTM5NTg2LDE3OD
-UzNzE2MTksMjAxNDk0NTY5MiwxMDAyMTU5ODQxLC0yMTA4MTgx
-NDk5LDE2Njk0NTE3MjMsLTE4OTQ1NjgyMDEsLTE5ODEyNTg4MD
-YsMTM2NjkyMzc1MSwxOTc4MzkxNjYzLC04NjM0MzM4MDEsLTY0
-ODQxMjgyNyw4NDIzODEyMzcsLTE2NzEyNzY0NTEsNjU4NTkzOD
-BdfQ==
+eyJoaXN0b3J5IjpbLTE2NDEyOTM1MDIsNTg3ODc2MzcyLC0xND
+cxMTM5NTg2LDE3ODUzNzE2MTksMjAxNDk0NTY5MiwxMDAyMTU5
+ODQxLC0yMTA4MTgxNDk5LDE2Njk0NTE3MjMsLTE4OTQ1NjgyMD
+EsLTE5ODEyNTg4MDYsMTM2NjkyMzc1MSwxOTc4MzkxNjYzLC04
+NjM0MzM4MDEsLTY0ODQxMjgyNyw4NDIzODEyMzcsLTE2NzEyNz
+Y0NTEsNjU4NTkzODBdfQ==
 -->
