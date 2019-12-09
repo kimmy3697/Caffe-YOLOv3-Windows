@@ -96,7 +96,8 @@ LMDB 생성은 build/tools/Release 폴더안에 convert_annoset.exe 파일을 �
 위 방법대로 Train LMDB와 Test LMDB를 만들어주세요.
  
 ## prototxt 파일 수정
-카페에서는 모델의 정보를 별도의 파일로 관리합니다.  
+카페에서는 모델과 학습과 관련된 정보를 별도의 파일로 관리합니다.
+prototxt 형태로 저장된 이 파일들은 크게 solver, train, test 가 있습니다.    
 
 
 
@@ -133,9 +134,10 @@ Please cite MobileNet-YOLO in your publications if it helps your research:
       Year = {2018}
     }
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NzExMzk1ODYsMTc4NTM3MTYxOSwyMD
-E0OTQ1NjkyLDEwMDIxNTk4NDEsLTIxMDgxODE0OTksMTY2OTQ1
-MTcyMywtMTg5NDU2ODIwMSwtMTk4MTI1ODgwNiwxMzY2OTIzNz
-UxLDE5NzgzOTE2NjMsLTg2MzQzMzgwMSwtNjQ4NDEyODI3LDg0
-MjM4MTIzNywtMTY3MTI3NjQ1MSw2NTg1OTM4MF19
+eyJoaXN0b3J5IjpbLTIwNjUyMjI1MDAsLTE0NzExMzk1ODYsMT
+c4NTM3MTYxOSwyMDE0OTQ1NjkyLDEwMDIxNTk4NDEsLTIxMDgx
+ODE0OTksMTY2OTQ1MTcyMywtMTg5NDU2ODIwMSwtMTk4MTI1OD
+gwNiwxMzY2OTIzNzUxLDE5NzgzOTE2NjMsLTg2MzQzMzgwMSwt
+NjQ4NDEyODI3LDg0MjM4MTIzNywtMTY3MTI3NjQ1MSw2NTg1OT
+M4MF19
 -->
