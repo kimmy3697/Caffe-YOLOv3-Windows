@@ -111,7 +111,7 @@ solver는 그냥 쓰셔도 되고 아니면 따로 새로 하셔도 되구요. �
 
 
 ### 마지막으로 학습!
-  학습은 아래 코드를 실행하는 것으로 수행 됩니다. 자세한 내용은 
+  학습은 아래 코드를 실행하는 것으로 수행 됩니다. 자세한 내용은 examples\train_yolov3_lite.cmd 파일을 우클릭하고 편집을 누르시면 내용을 확인 하실 수 있습니다. 본 문서는 mobilenet 백본의 yolov3 를 윈도우에서 학습 시키는 방법에 대해서 다뤄 보았습니다. 안되거나 어려운 사항이 있으시면 충분히 고민해보고 그래도 안되면 더 고민해보고 안되면 그때 이슈를 남겨주세요.
 ```
 > cd $caffe_root/
 > examples\train_yolov3_lite.cmd
@@ -143,7 +143,7 @@ Please cite MobileNet-YOLO in your publications if it helps your research:
       Year = {2018}
     }
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4NDY3MDU0OSwxMDM0NDg4MDczLDU4Nz
+eyJoaXN0b3J5IjpbLTQ2NTk1OTAzMiwxMDM0NDg4MDczLDU4Nz
 g3NjM3MiwtMTQ3MTEzOTU4NiwxNzg1MzcxNjE5LDIwMTQ5NDU2
 OTIsMTAwMjE1OTg0MSwtMjEwODE4MTQ5OSwxNjY5NDUxNzIzLC
 0xODk0NTY4MjAxLC0xOTgxMjU4ODA2LDEzNjY5MjM3NTEsMTk3
