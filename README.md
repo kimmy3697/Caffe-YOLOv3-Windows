@@ -72,10 +72,46 @@ Fork 해서 가져온 리포지토리구요 윈도우버전만 사용한다는 �
 
 아 참고로 말씀드리자면 지금 사용하는 xml 포맷은 pascal voc 포맷이고 yolo에서도 사용하는 포맷입니다. 그러니까 voc 데이터를 yolo에서도 사용할 수 있다~ 이말입니다! 아쉬겠어요? 
 
+## 데이터 리스트 생성
+
+ - pythonTool 폴더 안에 파이썬 코드 하나 만들어 넣었어요~ 간단한 코드지만 직접 만드는건 귀찮으니까... 그냥 이거 사용법을 알려드릴게요... 맘에 안드는 부분은 수정하시면 될 거에요.
+여튼 anaconda 나 뭐 기타 python 실행 되는걸로 실행 시켜줍시다.
+그러고 나면 뭐 입력하라고 하는데 생성할 데이터 리스트의 이름을 정해주시면 됩니다. 이름만 쓰시고 생성된 파일에 .txt를 붙이셔도 되고 아니면 그냥 바로 .txt 로 지정해주셔도 됩니다. 그러면 총 3번 폴더를 선택하라고 나오는데 첫번째는 이미지 폴더, 두번째는 어노테이션 폴더, 세번째는 데이터 리스트 저장할 폴더를 묻는겁니다. 주의 하실점은 앞에 두 폴더는 반드시 같은 폴더 하위에 있어야 합니다. 헷갈리시면 제가 만들어 놓은 pythonTool 폴더 내부에 예시가 있으니 DataSet 폴더의 img 폴더와 anno 폴더를 활용하시면 됩니다.
+ - 데이터리스트 파일이 완성됬을때 아래와 같이 나오면 됩니다.
+ - ![enter image description here](https://github.com/kimmy3697/Caffe-YOLOv3-Windows/blob/master/path_pairing_cap.png?raw=true)
+ 
 
 
-### Trainning Mobilenet-YOLOv3
-  
+**이제 우리 labelImg로 어노테이션 할때 수정했던 predefined_classes.txt 파일이 필요해영**
+ -  build/tools/Release 폴더안에 create_label_map.exe 를 사용합니다.
+ - 윈도우 파워 쉘을 실행하고 build/tools/Release 까지 이동하시고 아래와 같이 입력합시다.**(띄어쓰기에 유의 하세용)**
+C:\...\Caffe-YOLOv3-Windows\build\tools\Release> ./create_label_map.exe C:\...\predefined_classes.txt C:\...\출력파일.prototxt
+![enter image description here](https://github.com/kimmy3697/Caffe-YOLOv3-Windows/blob/master/labelmapCap.png?raw=true)
+
+## LMDB 생성
+LMDB 생성은 build/tools/Release 폴더안에 convert_annoset.exe 파일을 이용합니다. 해당 경로에서 powershell을 켜주시고 아래 명령어를 입력하세요 리사이즈는 원하시는 대로 변경하셔도 되요. 
+
+•./convert_annoset --anno_type=detection --label_map_file=레이블맵경로.prototxt --resize_width=320 --resize_height=320 --encoded=true 리스트파일루트폴더경로 리스트파일경로 LMDB저장경로
+
+위 방법대로 Train LMDB와 Test LMDB를 만들어주세요.
+
+ 
+## prototxt 파일 수정
+카페에서는 모델과 학습과 관련된 정보를 별도의 파일로 관리합니다.
+prototxt 형태로 저장된 이 파일들은 크게 solver, train, test 가 있습니다. 먼저 solver에는 텐서플로우로 피면 옵티마이저가 정의 되는 곳입니다. 여기서 학습에 필요한 각종 하이퍼 파라미터들이 정의 됩니다. 또한, solver에서 train과 test의 경로를 가지고 있습니다. solver는 또 solverstate 라는 놈의 경로를 지정하게 되는데 이는 학습이 도중에 중단되더라도 다시 제개할 수 있게 해줍니다. 텐서플로우의 체크포인트와 같은 것입니다. 
+![enter image description here](https://github.com/kimmy3697/Caffe-YOLOv3-Windows/blob/master/CaffePrototxtRelations.png?raw=true)
+
+models/yolov3 폴더 내부의 아래 3개 파일을 수정합니다.
+
+ - mobilenet_yolov3_lite_solver.prototxt
+ - mobilenet_yolov3_lite_train.prototxt
+ - mobilenet_yolov3_lite_test.prototxt
+
+solver는 그냥 쓰셔도 되고 아니면 따로 새로 하셔도 되구요. 대신 경로만 제대로 잡으시면 문제 없습니다. 바꿔야 할 부분은 train, test 의 lmdb 경로와 label_map_file 경로입니다. 3경로를 모두 우리가 위에서 준비한 파일들의 위치로 경로를 변경해 줍니다. 
+
+
+### 마지막으로 학습!
+  학습은 아래 코드를 실행하는 것으로 수행 됩니다. 자세한 내용은 examples\train_yolov3_lite.cmd 파일을 우클릭하고 편집을 누르시면 내용을 확인 하실 수 있습니다. 본 문서는 mobilenet 백본의 yolov3 를 윈도우에서 학습 시키는 방법에 대해서 다뤄 보았습니다. 안되거나 어려운 사항이 있으시면 충분히 고민해보고 그래도 안되면 더 고민해보고 안되면 그때 이슈를 남겨주세요.
 ```
 > cd $caffe_root/
 > examples\train_yolov3_lite.cmd
@@ -107,8 +143,10 @@ Please cite MobileNet-YOLO in your publications if it helps your research:
       Year = {2018}
     }
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwMjE1OTg0MSwtMjEwODE4MTQ5OSwxNj
-Y5NDUxNzIzLC0xODk0NTY4MjAxLC0xOTgxMjU4ODA2LDEzNjY5
-MjM3NTEsMTk3ODM5MTY2MywtODYzNDMzODAxLC02NDg0MTI4Mj
-csODQyMzgxMjM3LC0xNjcxMjc2NDUxLDY1ODU5MzgwXX0=
+eyJoaXN0b3J5IjpbLTQ2NTk1OTAzMiwxMDM0NDg4MDczLDU4Nz
+g3NjM3MiwtMTQ3MTEzOTU4NiwxNzg1MzcxNjE5LDIwMTQ5NDU2
+OTIsMTAwMjE1OTg0MSwtMjEwODE4MTQ5OSwxNjY5NDUxNzIzLC
+0xODk0NTY4MjAxLC0xOTgxMjU4ODA2LDEzNjY5MjM3NTEsMTk3
+ODM5MTY2MywtODYzNDMzODAxLC02NDg0MTI4MjcsODQyMzgxMj
+M3LC0xNjcxMjc2NDUxLDY1ODU5MzgwXX0=
 -->
