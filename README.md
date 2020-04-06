@@ -2,7 +2,11 @@
 
 
 
-#  Detection 기준으로 설명합니다. ㅠ 저도 이거 밖에 안해봤어요 ㅠㅠ
+#  Detection 기준으로 설명합니다. ㅠ 저도 이거 밖에 안해봤어요 ㅠㅠ 
+
+> ## 본 문서에서는 모델 수정에 관해서 다루지 않습니다.  특히 모델 deploy 에 대한 디테일한 주의사항을 다루지 않습니다.
+> 까먹었어요.
+
 
 ### Configuring and Building Caffe 
 
@@ -143,10 +147,11 @@ Please cite MobileNet-YOLO in your publications if it helps your research:
       Year = {2018}
     }
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2NTk1OTAzMiwxMDM0NDg4MDczLDU4Nz
-g3NjM3MiwtMTQ3MTEzOTU4NiwxNzg1MzcxNjE5LDIwMTQ5NDU2
-OTIsMTAwMjE1OTg0MSwtMjEwODE4MTQ5OSwxNjY5NDUxNzIzLC
-0xODk0NTY4MjAxLC0xOTgxMjU4ODA2LDEzNjY5MjM3NTEsMTk3
-ODM5MTY2MywtODYzNDMzODAxLC02NDg0MTI4MjcsODQyMzgxMj
-M3LC0xNjcxMjc2NDUxLDY1ODU5MzgwXX0=
+eyJoaXN0b3J5IjpbMTUzNTA3MDYzMSwtNDY1OTU5MDMyLDEwMz
+Q0ODgwNzMsNTg3ODc2MzcyLC0xNDcxMTM5NTg2LDE3ODUzNzE2
+MTksMjAxNDk0NTY5MiwxMDAyMTU5ODQxLC0yMTA4MTgxNDk5LD
+E2Njk0NTE3MjMsLTE4OTQ1NjgyMDEsLTE5ODEyNTg4MDYsMTM2
+NjkyMzc1MSwxOTc4MzkxNjYzLC04NjM0MzM4MDEsLTY0ODQxMj
+gyNyw4NDIzODEyMzcsLTE2NzEyNzY0NTEsNjU4NTkzODBdfQ==
+
 -->
